@@ -48,6 +48,11 @@ See `main/get_opts.m` for the parameters.
 ## License
 MIT License, see `LICENSE`
 
+## Contact
+For questions/comments, feel free to contact:
+
+hekun@bu.edu
+
 ## Notes
 - Currently only AP experiments are included. NDCG experiments will be added soon.
 - We provide the implementation of a simplified version of the tie-aware AP 
