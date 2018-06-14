@@ -5,7 +5,7 @@ normalize = false;
 lr = [1 0.1];
 
 % finetune VGG-16
-net = load(fullfile(opts.localDir, 'models', 'imagenet-vgg-f.mat'));
+net = load(fullfile(opts.dataDir, 'imagenet-vgg-f.mat'));
 net.layers(end) = [];
 net.layers(end) = [];
 

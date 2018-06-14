@@ -18,8 +18,10 @@ If you use this code in your research, please cite:
 
 ## Preparation
 - Create or symlink a directory `cachedir` under the root directory to hold experimental results
-- Install or symlink [VLFeat](http://www.vlfeat.org/)  at `./vlfeat` (for computing performance metrics)
 - Install or symlink [MatConvNet](http://www.vlfeat.org/matconvnet/) at `./matconvnet` (for training CNNs)
+- Install or symlink [VLFeat](http://www.vlfeat.org/)  at `./vlfeat`. 
+Note: this is only necessary for for computing the regular *tie-agnostic* performance metrics (AP/NDCG).
+We provide efficient implementation for the *tie-aware* metrics in `+eval`.
 - In the `data` directory, run `download_models.sh` to download ImageNet-pretrained CNNs (VGG-F and AlexNet)
 - For CIFAR-10: in `data`, run `download_cifar.sh`. This will download the precomputed IMDB format used in our experiments.
 - For NUS-WIDE: in `data`, run `download_nuswide.sh` to download the original images.

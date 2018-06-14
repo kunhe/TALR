@@ -5,7 +5,7 @@ normalize = false;
 lr = [1 0.1];
 
 % finetune Alexnet
-net = load(fullfile(opts.localDir, 'models', 'imagenet-caffe-alex.mat'));
+net = load(fullfile(opts.dataDir, 'imagenet-caffe-alex.mat'));
 net.layers(end) = [];
 net.layers(end) = [];
 
