@@ -1,14 +1,13 @@
 function DB = nus(opts, net)
 
 sdir = fullfile(opts.dataDir, 'NUSWIDE_images');
-fdir = '/research/codebooks/hashing_project/data/nuswide';
 
-images = textread([fdir '/Imagelist.txt'], '%s');
+images = textread([sdir '/Imagelist.txt'], '%s');
 images = strrep(images, '\', '/');
 images = strrep(images, 'C:/ImageData', sdir);
 
 % get labels
-labels = load([fdir '/AllLabels81.txt']);
+labels = load([sdir '/AllLabels81.txt']);
 myLogInfo('Total images = %g', size(labels, 1));
 
 % use 21 most frequent labels only
