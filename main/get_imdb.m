@@ -42,7 +42,6 @@ if exist(imdbFile, 'file')
 else
     imdb = imdbFunc(opts, net) ;
     save(imdbFile, '-struct', 'imdb', '-v7.3') ;
-    if ~opts.windows, unix(['chmod g+rw ' imdbFile]); end
     myLogInfo('saved in %.2fs', toc(t0));
 end
 imdb.name = imdbName;

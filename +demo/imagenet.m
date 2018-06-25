@@ -10,6 +10,13 @@ opts = ip.Results;
 opts = get_opts(opts, 'imagenet', nbits, opts.modelType, varargin{:});
 
 %%%%%%%%%%%%%%%%% hard-coded fields %%%%%%%%%%%%%%%%%
+% Evaluation Metrics
+% tieAP: tie-aware AP, evaluated on the full ranking
+% AP@k : tie-agnostic AP, evaluated at cutoff k
+%
+% NOTE only the tie-agnostic AP requires installation of VLFeat
+% TODO remove VLFeat dependency in the future
+%
 opts.metrics = {'tieAP', 'AP@1000'};
 opts.testFunc = @test_imagenet;
 %%%%%%%%%%%%%%%%% hard-coded fields %%%%%%%%%%%%%%%%%
