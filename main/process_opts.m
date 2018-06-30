@@ -53,7 +53,7 @@ if opts.dropout > 0 && opts.dropout < 1
     idr = sprintf('%s-Dropout%g', idr, opts.dropout);
 end
 % 3. lr multiplier for pretrained layers
-if ismember(opts.modelType, {'vggf', 'alexnet'})
+if ~strcmp(opts.modelType, 'fc1')
     if opts.lrmult > 1 || opts.lrmult < 0
         opts.lrmult = 0.1;  % default to 0.1
         myLogInfo('Warning: opts.lrmult outside [0, 1]');
@@ -70,7 +70,6 @@ if ~exist(opts.localDir, 'file')
     error('Please make a symlink for cachedir!');
 end
 opts.dataDir = './data';
-opts.imdbPath = fullfile(opts.dataDir, [opts.dataset '_imdb']);
 
 % --------------------------------------------
 % expDir: format like .../deep-hashing/deepMI-cifar32-fc

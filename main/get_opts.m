@@ -37,7 +37,6 @@ ip.addParameter('epochs'   , 50);     % total # epochs
 ip.addParameter('gpus'     , []);     % which GPU(s) to use
 ip.addParameter('continue' , true);   % continue from saved checkpoint?
 ip.addParameter('debug'    , false);  % debug mode?
-ip.addParameter('plot'     , false);  % show plots?
 
 % test params
 ip.addParameter('testInterval', 20);  % test every {testInterval} epochs

@@ -2,7 +2,7 @@ function [net, imageSize, normalize] = vggf(opts)
 
 imageSize = 224;
 normalize = false;
-lr = [1 0.1];
+lr = [1 1];
 
 % finetune VGG-16
 net = load(fullfile(opts.dataDir, 'imagenet-vgg-f.mat'));

@@ -50,7 +50,7 @@ opts.cudnn = true ;
 opts.errorFunction = 'multiclass' ;
 opts.errorLabels = {} ;
 opts.plotDiagnostics = false ;
-opts.plotStatistics = true;
+opts.plotStatistics = false;
 opts = vl_argparse(opts, varargin) ;
 
 opts.saveEpochs(end+1) = opts.numEpochs;

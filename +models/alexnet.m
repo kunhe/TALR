@@ -2,7 +2,7 @@ function [net, imageSize, normalize] = alexnet(opts)
 
 imageSize = 227;
 normalize = false;
-lr = [1 0.1];
+lr = [1 1];
 
 % finetune Alexnet
 net = load(fullfile(opts.dataDir, 'imagenet-caffe-alex.mat'));

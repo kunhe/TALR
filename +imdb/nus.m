@@ -1,6 +1,6 @@
 function DB = nus(opts, net)
 
-sdir = fullfile(opts.dataDir, 'NUSWIDE_images');
+sdir = fullfile(opts.dataDir, 'NUSWIDE');
 
 images = textread([sdir '/Imagelist.txt'], '%s');
 images = strrep(images, '\', '/');

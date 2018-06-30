@@ -22,23 +22,10 @@ If you use this code in your research, please cite:
 - Install or symlink [VLFeat](http://www.vlfeat.org/)  at `./vlfeat`. 
 **Note**: this is only necessary for computing the regular *tie-agnostic* AP metric.
 We provide efficient implementation for the *tie-aware* metrics in `+eval`.
-- In the `data` directory, run `download_models.sh` to download ImageNet-pretrained CNNs (VGG-F and AlexNet)
+- For ImageNet-pretrained models: in the `data` directory, run `download_models.sh` to download pretrained CNNs (VGG-F and AlexNet).
 - For CIFAR-10: in `data`, run `download_cifar.sh`. This will download the precomputed IMDB format used in our experiments.
-- For NUS-WIDE: in `data`, run `download_nuswide.sh` to download the original images.
-Decompress the downloaded .zip file into `data/NUSWIDE_images`.
-- For ImageNet100: we use the images and train/test split provided by [HashNet](http://github.com/thuml/HashNet).
-Please download the `imagenet.tar.gz` file [here](https://drive.google.com/drive/folders/0B7IzDz-4yH_HOXdoaDU4dk40RFE) 
-and decompress it into `data/ImageNet`.
-Then, get the split files [here](https://github.com/thuml/HashNet/tree/master/caffe/data/imagenet).
-The resulting directory should have the following structure:
-```
-data/ImageNet/
-	|- image
-	|- val_image
-	|- train.txt
-	|- test0.txt ... text7.txt
-	|- database0.txt ... database7.txt
-```
+- For NUS-WIDE: see `data/NUSWIDE/README.md`.
+- For ImageNet100: see `data/ImageNet/README.md`.
 
 ## Usage
 - In the root folder, run `startup.m`
