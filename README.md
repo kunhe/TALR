@@ -43,9 +43,8 @@ For questions/comments, feel free to contact:
 hekun@bu.edu
 
 ## Notes
-- Currently only AP experiments are included. NDCG experiments will be added soon.
-- We provide the implementation of a simplified version of the tie-aware AP 
-(in `apr_s_forward.m` and `apr_s_backward.m`), which attains similar performance 
-compared to the original version, but is much simpler to implement.
-The derivations will be added soon.
+- We provide simplified versions of tie-aware AP (`apr_s_forward.m` and `apr_s_backward.m`) 
+and tie-aware NDCG (`ndcgr_s_forward.m` and `ndcgr_s_backward.m`).
+They attain similar performance compared to the original versions, but are much simpler to implement.
+The derivations can be found in the appendix of the arxiv version of the paper (v4).
 - This implementation is partly based on [MIHash](http://github.com/fcakir/mihash).
