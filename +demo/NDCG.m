@@ -3,7 +3,7 @@ function demo_NDCG(dataset, nbits, modelType, varargin)
 % init opts
 ip = inputParser;
 ip.addParameter('split', 1);
-ip.addParameter('obj', 'ndcglb');
+ip.addParameter('obj', 'ndcgr_s');
 ip.KeepUnmatched = true;
 ip.parse(varargin{:});
 opts = get_opts(ip.Results, dataset, nbits, modelType, varargin{:});
