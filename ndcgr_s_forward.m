@@ -33,7 +33,7 @@ Discount = 1 ./ log2((1:N)' + 1);
 
 % compute distances from relaxed hash codes
 Phi  = 2 * sigmf(X, [opts.gamma_p 0]) - 1;
-Dist = (nbits - phi' * phi) / 2;   
+Dist = (nbits - Phi' * Phi) / 2;   
 
 % histogram binning
 histW = opts.nbits / opts.nbins;
@@ -45,7 +45,7 @@ if onGPU,
     c_dv = gpuArray(c_dv); 
 end
 for l = 1:L
-    pulse{l} = triPulse(hdist, Cntrs(l), Delta);  % NxN
+    pulse{l} = triPulse(Dist, histC(l), histW);  % NxN
     for v = 1:Naff
         c_dv(:, l, v) = sum(pulse{l} .* vInd{v}, 2);  % Nx1
     end

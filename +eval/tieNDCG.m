@@ -12,7 +12,6 @@ CD = [0, cumsum(Discount)];
 
 t0 = tic;
 Aff = int8(Aff);
-disp([0, fliplr(opts.thr_dist); single(unique(Aff(:))')])
 Aff_sorted = sort(Aff, 2, 'Descend');
 DCGi = single(2.^Aff_sorted-1) * Discount';
 

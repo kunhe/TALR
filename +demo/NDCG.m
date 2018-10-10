@@ -66,7 +66,7 @@ else
     else
         assert(isequal(size(meanImage), [imgSize imgSize 3]));
     end
-    batchFunc = @(I, B) batch_imagenet(I, B, imgSize, meanImage);
+    batchFunc = @(I, B) imdb.batch_imagenet(I, B, imgSize, meanImage);
 end
 
 % figure out learning rate vector
