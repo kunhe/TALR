@@ -40,7 +40,7 @@ MIT License, see `LICENSE`
 ## Contact
 For questions/comments, feel free to contact:
 
-hekun@bu.edu
+kunhe@ieee.org
 
 ## Notes
 - We provide simplified versions of tie-aware AP (`apr_s_forward.m` and `apr_s_backward.m`) 
