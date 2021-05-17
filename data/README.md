@@ -1,0 +1,4 @@
+- ImageNet-pretrained models: follow links to download [VGG-F](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-f.mat) and [AlexNet](http://www.vlfeat.org/matconvnet/models/imagenet-caffe-alex.mat), and place them in this directory.
+- CIFAR-10: follow links to download precomputed IMDB format used in our experiments: [imdb_cifar_split1.mat](https://drive.google.com/file/d/1QWEJYN2llIHcyC0cjMe1Z2pi-DqbHZsZ/view?usp=sharing) [imdb_cifar_split2.mat](https://drive.google.com/file/d/1nYayKcBlrYl-u6xrmgwPvVPffixkrnIi/view?usp=sharing), and place them in this directory.
+- NUS-WIDE: see `NUSWIDE/README.md`.
+- ImageNet100: see `ImageNet/README.md`.

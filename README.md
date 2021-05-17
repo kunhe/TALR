@@ -1,5 +1,5 @@
 # Tie-Aware Hashing
-This repository contains Matlab implementation for the following paper:
+This repository contains Matlab/MatConvNet implementation for the following paper:
 
 "Hashing as Tie-Aware Learning to Rank",  
     Kun He, Fatih Cakir, Sarah Adel Bargal, and Stan Sclaroff.
@@ -22,16 +22,13 @@ If you use this code in your research, please cite:
 - Install or symlink [VLFeat](http://www.vlfeat.org/)  at `./vlfeat`. 
 **Note**: this is only necessary for computing the regular *tie-agnostic* AP metric.
 We provide efficient implementation for the *tie-aware* metrics in `+eval`.
-- For ImageNet-pretrained models: in the `data` directory, run `download_models.sh` to download pretrained CNNs (VGG-F and AlexNet).
-- For CIFAR-10: in `data`, run `download_cifar.sh`. This will download the precomputed IMDB format used in our experiments.
-- For NUS-WIDE: see `data/NUSWIDE/README.md`.
-- For ImageNet100: see `data/ImageNet/README.md`.
+- Download datasets and pretrained models: see `data/README.md`.
 
 ## Usage
 - In the root folder, run `startup.m`
 - To (approximately) replicate results in the paper, run one of the `run_*.m` files.
 For example, `run_cifar_s1(32)` will run the Setting 1 experiment on the CIFAR-10 dataset, with 32-bit hash codes, using the default parameters therein.
-- Alternatively, directly run the files in `+demo/` with your parameter choices.
+- Alternatively, directly run the scripts in `+demo/` with your parameter choices.
 See `main/get_opts.m` for the parameters.
 
 ## License
