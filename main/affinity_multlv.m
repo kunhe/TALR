@@ -22,7 +22,7 @@ else
     else
         Aff = Y1 * Y2';
     end
-    Aff = int8(Aff);
+    Aff = int16(Aff);
 end
 
 end
