@@ -37,7 +37,7 @@ MIT License, see `LICENSE`
 ## Contact
 For questions/comments, feel free to contact:
 
-kunhe@ieee.org
+kunhe@fb.com
 
 ## Notes
 - We provide simplified versions of tie-aware AP (`apr_s_forward.m` and `apr_s_backward.m`) 
